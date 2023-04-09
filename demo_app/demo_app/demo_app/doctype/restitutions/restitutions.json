@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-09 16:58:22.281399",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "idrestitution",
+  "idpromoteur",
+  "numero",
+  "dossier",
+  "seqpret",
+  "ordre",
+  "nomprenom",
+  "coordination",
+  "nature",
+  "sdaterestitution",
+  "ovnumero",
+  "sdateov",
+  "motif",
+  "banquepromoteur",
+  "agencebancairepromoteur",
+  "banqueov",
+  "agenceov",
+  "rib",
+  "pnrrestitue",
+  "pnractualise",
+  "refavisbanque",
+  "sdateavisbanque"
+ ],
+ "fields": [
+  {
+   "fieldname": "numero",
+   "fieldtype": "Phone",
+   "label": "Numero"
+  },
+  {
+   "fieldname": "dossier",
+   "fieldtype": "Int",
+   "label": "Dossier"
+  },
+  {
+   "fieldname": "ordre",
+   "fieldtype": "Data",
+   "label": "Ordre"
+  },
+  {
+   "fieldname": "coordination",
+   "fieldtype": "Data",
+   "label": "Coordination"
+  },
+  {
+   "fieldname": "nature",
+   "fieldtype": "Select",
+   "label": "Nature",
+   "options": "N1\nN2"
+  },
+  {
+   "fieldname": "ovnumero",
+   "fieldtype": "Data",
+   "label": "Numero"
+  },
+  {
+   "fieldname": "motif",
+   "fieldtype": "Data",
+   "label": "Motif"
+  },
+  {
+   "fieldname": "rib",
+   "fieldtype": "Int",
+   "label": "RIB"
+  },
+  {
+   "fieldname": "idrestitution",
+   "fieldtype": "Int",
+   "label": "Id"
+  },
+  {
+   "fieldname": "idpromoteur",
+   "fieldtype": "Int",
+   "label": "Id promoteur"
+  },
+  {
+   "fieldname": "seqpret",
+   "fieldtype": "Data",
+   "label": "Seq pret"
+  },
+  {
+   "fieldname": "nomprenom",
+   "fieldtype": "Data",
+   "label": "Nom et prenom"
+  },
+  {
+   "fieldname": "sdaterestitution",
+   "fieldtype": "Date",
+   "label": "Date "
+  },
+  {
+   "fieldname": "sdateov",
+   "fieldtype": "Date",
+   "label": "S Date"
+  },
+  {
+   "fieldname": "banquepromoteur",
+   "fieldtype": "Data",
+   "label": "Banque promoteur"
+  },
+  {
+   "fieldname": "agencebancairepromoteur",
+   "fieldtype": "Data",
+   "label": "Agence bancaire promoteur"
+  },
+  {
+   "fieldname": "banqueov",
+   "fieldtype": "Data",
+   "label": "Banque "
+  },
+  {
+   "fieldname": "agenceov",
+   "fieldtype": "Data",
+   "label": "Agence"
+  },
+  {
+   "fieldname": "pnrrestitue",
+   "fieldtype": "Int",
+   "label": "PNR"
+  },
+  {
+   "fieldname": "pnractualise",
+   "fieldtype": "Int",
+   "label": "PNR actualis"
+  },
+  {
+   "fieldname": "refavisbanque",
+   "fieldtype": "Int",
+   "label": "REF avis banque"
+  },
+  {
+   "fieldname": "sdateavisbanque",
+   "fieldtype": "Date",
+   "label": "Date avis banque"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-09 17:00:51.170526",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Restitutions",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

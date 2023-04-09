@@ -1,0 +1,299 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-09 14:45:27.888675",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "id",
+  "user",
+  "coordination",
+  "projet",
+  "datedenaissance_sql",
+  "identifiantpromoteur",
+  "dossiernumero",
+  "nom",
+  "prenom",
+  "programme",
+  "positionprofessionnelle",
+  "commune",
+  "codemehta",
+  "codedaira",
+  "adresseimplantation",
+  "secteuractivite",
+  "brancheactivite",
+  "montantprevisionnel",
+  "montantvisionnel",
+  "column_break_uats",
+  "montantpnr",
+  "montantprojet",
+  "financement",
+  "apportpersonnel",
+  "positionlocal",
+  "typepret",
+  "matricule",
+  "phase",
+  "datedepot_sql",
+  "datedebut_sql",
+  "datefin_sql",
+  "coderejet",
+  "codetraitement",
+  "decisionacceptation",
+  "dateacceptation_sql",
+  "montantpret",
+  "montantpretadditif",
+  "montantpreannule",
+  "montantpretrestitue"
+ ],
+ "fields": [
+  {
+   "fieldname": "id",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Id ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "coordination",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Coordination",
+   "reqd": 1
+  },
+  {
+   "fieldname": "projet",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Projet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datedenaissance_sql",
+   "fieldtype": "Date",
+   "label": "Date de naissance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identifiantpromoteur",
+   "fieldtype": "Data",
+   "label": "Id Promoteur",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dossiernumero",
+   "fieldtype": "Data",
+   "label": "Doisser num",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Prenom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "programme",
+   "fieldtype": "Data",
+   "label": "Programme"
+  },
+  {
+   "fieldname": "positionprofessionnelle",
+   "fieldtype": "Data",
+   "label": "Position professionnelle"
+  },
+  {
+   "fieldname": "commune",
+   "fieldtype": "Data",
+   "label": "Commune"
+  },
+  {
+   "fieldname": "codemehta",
+   "fieldtype": "Int",
+   "label": "Code mechta"
+  },
+  {
+   "fieldname": "codedaira",
+   "fieldtype": "Int",
+   "label": "Code Daira"
+  },
+  {
+   "fieldname": "adresseimplantation",
+   "fieldtype": "Data",
+   "label": "Adresse Implantation"
+  },
+  {
+   "fieldname": "secteuractivite",
+   "fieldtype": "Data",
+   "label": "Secteur activite"
+  },
+  {
+   "fieldname": "brancheactivite",
+   "fieldtype": "Data",
+   "label": "Branche activite"
+  },
+  {
+   "fieldname": "montantprevisionnel",
+   "fieldtype": "Currency",
+   "label": "Montant previsionnel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "montantvisionnel",
+   "fieldtype": "Currency",
+   "label": "Montant visionnel",
+   "reqd": 1
+  },
+  {
+   "fieldname": "montantpnr",
+   "fieldtype": "Currency",
+   "label": "Montant PNR",
+   "reqd": 1
+  },
+  {
+   "fieldname": "montantprojet",
+   "fieldtype": "Currency",
+   "label": "Montant projet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "financement",
+   "fieldtype": "Currency",
+   "label": "Financement",
+   "reqd": 1
+  },
+  {
+   "fieldname": "apportpersonnel",
+   "fieldtype": "Data",
+   "label": "Apport personnel"
+  },
+  {
+   "fieldname": "positionlocal",
+   "fieldtype": "Data",
+   "label": "Position local"
+  },
+  {
+   "fieldname": "typepret",
+   "fieldtype": "Select",
+   "label": "Type pret"
+  },
+  {
+   "fieldname": "matricule",
+   "fieldtype": "Data",
+   "label": "Matricule",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phase",
+   "fieldtype": "Data",
+   "label": "Phase",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datedepot_sql",
+   "fieldtype": "Date",
+   "label": "Date depot",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datedebut_sql",
+   "fieldtype": "Date",
+   "label": "Date debut",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datefin_sql",
+   "fieldtype": "Date",
+   "label": "Date fin",
+   "reqd": 1
+  },
+  {
+   "fieldname": "coderejet",
+   "fieldtype": "Int",
+   "label": "Code rejet",
+   "reqd": 1
+  },
+  {
+   "fieldname": "codetraitement",
+   "fieldtype": "Int",
+   "label": "Code traitement",
+   "reqd": 1
+  },
+  {
+   "default": "Accept\u00e9",
+   "fieldname": "decisionacceptation",
+   "fieldtype": "Select",
+   "label": "Decision Acceptation",
+   "options": "Accept\u00e9\nRefus\u00e9",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_uats",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dateacceptation_sql",
+   "fieldtype": "Date",
+   "label": "Date acceptation"
+  },
+  {
+   "fieldname": "montantpret",
+   "fieldtype": "Currency",
+   "label": "Montant pret"
+  },
+  {
+   "fieldname": "montantpretadditif",
+   "fieldtype": "Currency",
+   "label": "Montant pret additif"
+  },
+  {
+   "fieldname": "montantpreannule",
+   "fieldtype": "Currency",
+   "label": "Montant pret annule"
+  },
+  {
+   "fieldname": "montantpretrestitue",
+   "fieldtype": "Currency",
+   "label": "Montant pret restitue"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-09 14:54:52.207890",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "avis de dossier",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,298 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-09 17:19:24.289688",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "coordination",
+  "user",
+  "date_modification",
+  "id",
+  "hashcode",
+  "nom",
+  "prenom",
+  "nomarabe",
+  "prenomarabe",
+  "prenompere",
+  "nometprenommere",
+  "sexe",
+  "titre",
+  "situationfamille",
+  "presume",
+  "datenaissance",
+  "lieunaissance",
+  "codelieudenaissance",
+  "numeroacteextraitnaissance",
+  "adresse",
+  "tel",
+  "email",
+  "ville",
+  "pays",
+  "wilayaresidence",
+  "codecommuneresidence",
+  "codedairaresidence",
+  "codepostaleresidence",
+  "numeroassurancechaumage",
+  "numeropermis",
+  "datepermis_sql",
+  "lieudelivrancepermis",
+  "numeropieceidentite",
+  "datepcn_sql",
+  "lieudelivrancepcn",
+  "nivinstruction",
+  "profession",
+  "diplome",
+  "qualification",
+  "nbanneeesxperiences",
+  "secteuractiviteprincipal",
+  "dummy1",
+  "dummy2"
+ ],
+ "fields": [
+  {
+   "fieldname": "coordination",
+   "fieldtype": "Data",
+   "label": "Coordination"
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "label": "User"
+  },
+  {
+   "fieldname": "date_modification",
+   "fieldtype": "Date",
+   "label": "Date modification"
+  },
+  {
+   "fieldname": "id",
+   "fieldtype": "Int",
+   "label": "Id"
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "label": "Nom "
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "label": "Prenom"
+  },
+  {
+   "fieldname": "sexe",
+   "fieldtype": "Select",
+   "label": "Sexe",
+   "options": "Homme\nFemme"
+  },
+  {
+   "fieldname": "titre",
+   "fieldtype": "Data",
+   "label": "Titre"
+  },
+  {
+   "fieldname": "presume",
+   "fieldtype": "Small Text",
+   "label": "Presume"
+  },
+  {
+   "fieldname": "adresse",
+   "fieldtype": "Data",
+   "label": "Adresse"
+  },
+  {
+   "fieldname": "tel",
+   "fieldtype": "Phone",
+   "label": "Tel"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "ville",
+   "fieldtype": "Data",
+   "label": "Ville"
+  },
+  {
+   "fieldname": "pays",
+   "fieldtype": "Data",
+   "label": "Pays"
+  },
+  {
+   "fieldname": "profession",
+   "fieldtype": "Data",
+   "label": "Profession"
+  },
+  {
+   "fieldname": "diplome",
+   "fieldtype": "Data",
+   "label": "Diplome"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "dummy1",
+   "fieldtype": "Data",
+   "label": "DUMMY1"
+  },
+  {
+   "fieldname": "dummy2",
+   "fieldtype": "Data",
+   "label": "DUMMY2"
+  },
+  {
+   "fieldname": "hashcode",
+   "fieldtype": "Data",
+   "label": "Hash code",
+   "unique": 1
+  },
+  {
+   "fieldname": "nomarabe",
+   "fieldtype": "Data",
+   "label": "Nom arabe"
+  },
+  {
+   "fieldname": "prenomarabe",
+   "fieldtype": "Data",
+   "label": "Prenom arabe"
+  },
+  {
+   "fieldname": "prenompere",
+   "fieldtype": "Data",
+   "label": "Prenom pere"
+  },
+  {
+   "fieldname": "nometprenommere",
+   "fieldtype": "Data",
+   "label": "Nom et prenom mere"
+  },
+  {
+   "fieldname": "situationfamille",
+   "fieldtype": "Select",
+   "label": "Situation famille",
+   "options": "C\u00e9l\u00e9bataire\nMari\u00e9(e)"
+  },
+  {
+   "fieldname": "datenaissance",
+   "fieldtype": "Date",
+   "label": "Date naissance"
+  },
+  {
+   "fieldname": "lieunaissance",
+   "fieldtype": "Data",
+   "label": "Lieu naissance "
+  },
+  {
+   "fieldname": "codelieudenaissance",
+   "fieldtype": "Data",
+   "label": "Code lieu de naissance"
+  },
+  {
+   "fieldname": "numeroacteextraitnaissance",
+   "fieldtype": "Data",
+   "label": "Num extrait naissance"
+  },
+  {
+   "fieldname": "wilayaresidence",
+   "fieldtype": "Data",
+   "label": "Wilaya residence"
+  },
+  {
+   "fieldname": "codecommuneresidence",
+   "fieldtype": "Data",
+   "label": "code commune"
+  },
+  {
+   "fieldname": "codedairaresidence",
+   "fieldtype": "Data",
+   "label": "Code daira"
+  },
+  {
+   "fieldname": "codepostaleresidence",
+   "fieldtype": "Data",
+   "label": "Code postale"
+  },
+  {
+   "fieldname": "numeroassurancechaumage",
+   "fieldtype": "Data",
+   "label": "Num assurance chaumage"
+  },
+  {
+   "fieldname": "numeropermis",
+   "fieldtype": "Data",
+   "label": "Numero permis"
+  },
+  {
+   "fieldname": "datepermis_sql",
+   "fieldtype": "Date",
+   "label": "Date permis"
+  },
+  {
+   "fieldname": "lieudelivrancepermis",
+   "fieldtype": "Data",
+   "label": "Lieu de livrance permis"
+  },
+  {
+   "fieldname": "numeropieceidentite",
+   "fieldtype": "Data",
+   "label": "Num piece identite"
+  },
+  {
+   "fieldname": "datepcn_sql",
+   "fieldtype": "Date",
+   "label": "Date PCN"
+  },
+  {
+   "fieldname": "lieudelivrancepcn",
+   "fieldtype": "Data",
+   "label": "Lieu de livrance PCN"
+  },
+  {
+   "fieldname": "nivinstruction",
+   "fieldtype": "Data",
+   "label": "NIV Instruction"
+  },
+  {
+   "fieldname": "nbanneeesxperiences",
+   "fieldtype": "Int",
+   "label": "Annes d'experience"
+  },
+  {
+   "fieldname": "secteuractiviteprincipal",
+   "fieldtype": "Data",
+   "label": "Secteur principal"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-09 17:23:54.352558",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Promoteur",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

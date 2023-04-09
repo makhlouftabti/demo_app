@@ -1,0 +1,442 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-09 15:07:55.699198",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "idpret",
+  "user",
+  "nom",
+  "prenom",
+  "datenaissance_sql",
+  "identifiantpromoteur",
+  "dossiernumero",
+  "typrpret",
+  "programme",
+  "seqpret",
+  "additif",
+  "produit",
+  "datedecision_sql",
+  "refdecision",
+  "activite_section",
+  "activite",
+  "codeactivite",
+  "secteuractivite",
+  "brancheactivite",
+  "adresseactivite",
+  "wilayaactivite",
+  "dairaactivite",
+  "codecommune",
+  "codepostale",
+  "section_break_rwnt",
+  "tauxpartpesonnel",
+  "totalinvestisement",
+  "investissementpartpersonnel",
+  "investissementpartangem",
+  "investissementpartbanque",
+  "investissementpartautre",
+  "codeautrepartenare",
+  "fonds_section",
+  "modeenvoifonds",
+  "numerodemandefonds",
+  "datedemandefonds_sql",
+  "numeroenvoi",
+  "dateenvoifonds_sql",
+  "codebanque",
+  "codeagencebancaire",
+  "montantpret",
+  "dureeremboursement",
+  "dateenvoifondsdoc_sql",
+  "dateliberationpret_sql",
+  "datedemarrage_sql",
+  "differemois",
+  "classeecheancier",
+  "numerodecompte",
+  "echeancier",
+  "cloture",
+  "clotureannule",
+  "flag",
+  "motifannulation",
+  "dateannulation_sql",
+  "motifannulationtexte",
+  "datedecaissement_sql",
+  "annulationnonidentifie",
+  "dateavance_sql",
+  "flag1",
+  "flag2",
+  "flag3",
+  "flag4",
+  "dateecheancefirst_sql",
+  "dateanalyse_sql",
+  "montantrembourse"
+ ],
+ "fields": [
+  {
+   "fieldname": "idpret",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "User",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prenom",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Prenom",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datenaissance_sql",
+   "fieldtype": "Date",
+   "label": "Date naissance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "identifiantpromoteur",
+   "fieldtype": "Int",
+   "label": "Id promoteur",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dossiernumero",
+   "fieldtype": "Int",
+   "label": "Dossier num",
+   "reqd": 1
+  },
+  {
+   "fieldname": "typrpret",
+   "fieldtype": "Select",
+   "label": "Type pret",
+   "options": "\ntype 1\ntype 2"
+  },
+  {
+   "fieldname": "programme",
+   "fieldtype": "Data",
+   "label": "Programme"
+  },
+  {
+   "fieldname": "seqpret",
+   "fieldtype": "Data",
+   "label": "Seq pret"
+  },
+  {
+   "fieldname": "additif",
+   "fieldtype": "Currency",
+   "label": "Additif",
+   "reqd": 1
+  },
+  {
+   "fieldname": "produit",
+   "fieldtype": "Data",
+   "label": "Produit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datedecision_sql",
+   "fieldtype": "Date",
+   "label": "Date decision",
+   "reqd": 1
+  },
+  {
+   "fieldname": "refdecision",
+   "fieldtype": "Int",
+   "label": "Ref decision",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activite_section",
+   "fieldtype": "Section Break",
+   "label": "Activite"
+  },
+  {
+   "fieldname": "activite",
+   "fieldtype": "Data",
+   "label": "Activite"
+  },
+  {
+   "fieldname": "adresseactivite",
+   "fieldtype": "Data",
+   "label": "Adresse "
+  },
+  {
+   "fieldname": "wilayaactivite",
+   "fieldtype": "Data",
+   "label": "Wilaya "
+  },
+  {
+   "fieldname": "dairaactivite",
+   "fieldtype": "Data",
+   "label": "Daira "
+  },
+  {
+   "fieldname": "section_break_rwnt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fonds_section",
+   "fieldtype": "Section Break",
+   "label": "Fonds"
+  },
+  {
+   "fieldname": "echeancier",
+   "fieldtype": "Data",
+   "label": "Echeancier"
+  },
+  {
+   "fieldname": "cloture",
+   "fieldtype": "Data",
+   "label": "Cloture"
+  },
+  {
+   "fieldname": "flag",
+   "fieldtype": "Data",
+   "label": "Flag"
+  },
+  {
+   "fieldname": "codeactivite",
+   "fieldtype": "Data",
+   "label": "Code "
+  },
+  {
+   "fieldname": "secteuractivite",
+   "fieldtype": "Data",
+   "label": "Secteur "
+  },
+  {
+   "fieldname": "brancheactivite",
+   "fieldtype": "Data",
+   "label": "Branche "
+  },
+  {
+   "fieldname": "codecommune",
+   "fieldtype": "Data",
+   "label": "Code commune"
+  },
+  {
+   "fieldname": "codepostale",
+   "fieldtype": "Data",
+   "label": "Code postale"
+  },
+  {
+   "fieldname": "tauxpartpesonnel",
+   "fieldtype": "Currency",
+   "label": "Taux part pesonnel"
+  },
+  {
+   "fieldname": "totalinvestisement",
+   "fieldtype": "Currency",
+   "label": "Total investisement"
+  },
+  {
+   "fieldname": "investissementpartpersonnel",
+   "fieldtype": "Currency",
+   "label": "Investissement personnel"
+  },
+  {
+   "fieldname": "investissementpartangem",
+   "fieldtype": "Currency",
+   "label": "Investissement angem"
+  },
+  {
+   "fieldname": "investissementpartbanque",
+   "fieldtype": "Currency",
+   "label": "Investissemebt banque"
+  },
+  {
+   "fieldname": "investissementpartautre",
+   "fieldtype": "Currency",
+   "label": "Investissement autre"
+  },
+  {
+   "fieldname": "codeautrepartenare",
+   "fieldtype": "Data",
+   "label": "Code autre"
+  },
+  {
+   "fieldname": "modeenvoifonds",
+   "fieldtype": "Data",
+   "label": "Mode envoi"
+  },
+  {
+   "fieldname": "numerodemandefonds",
+   "fieldtype": "Data",
+   "label": "Num demende"
+  },
+  {
+   "fieldname": "datedemandefonds_sql",
+   "fieldtype": "Date",
+   "label": "Date demande"
+  },
+  {
+   "fieldname": "numeroenvoi",
+   "fieldtype": "Data",
+   "label": "Num envoi"
+  },
+  {
+   "fieldname": "dateenvoifonds_sql",
+   "fieldtype": "Date",
+   "label": "Date envoi"
+  },
+  {
+   "fieldname": "codebanque",
+   "fieldtype": "Int",
+   "label": "Code banque"
+  },
+  {
+   "fieldname": "codeagencebancaire",
+   "fieldtype": "Int",
+   "label": "Code agence bancaire"
+  },
+  {
+   "fieldname": "montantpret",
+   "fieldtype": "Currency",
+   "label": "Montant pret"
+  },
+  {
+   "fieldname": "dureeremboursement",
+   "fieldtype": "Duration",
+   "label": "Duree remboursement"
+  },
+  {
+   "fieldname": "dateenvoifondsdoc_sql",
+   "fieldtype": "Date",
+   "label": "Date envoi doc"
+  },
+  {
+   "fieldname": "dateliberationpret_sql",
+   "fieldtype": "Date",
+   "label": "Date liberation pret"
+  },
+  {
+   "fieldname": "datedemarrage_sql",
+   "fieldtype": "Date",
+   "label": "Date demarrage"
+  },
+  {
+   "fieldname": "differemois",
+   "fieldtype": "Duration",
+   "label": "Differe mois"
+  },
+  {
+   "fieldname": "classeecheancier",
+   "fieldtype": "Data",
+   "label": "Classe echeancier"
+  },
+  {
+   "fieldname": "numerodecompte",
+   "fieldtype": "Phone",
+   "label": "Num compte"
+  },
+  {
+   "fieldname": "clotureannule",
+   "fieldtype": "Data",
+   "label": "Cloture annule"
+  },
+  {
+   "fieldname": "motifannulation",
+   "fieldtype": "Data",
+   "label": "Motif annulation"
+  },
+  {
+   "fieldname": "dateannulation_sql",
+   "fieldtype": "Date",
+   "label": "Date annulation"
+  },
+  {
+   "fieldname": "motifannulationtexte",
+   "fieldtype": "Small Text",
+   "label": "Texte annulation"
+  },
+  {
+   "fieldname": "datedecaissement_sql",
+   "fieldtype": "Date",
+   "label": "Date caissement"
+  },
+  {
+   "fieldname": "annulationnonidentifie",
+   "fieldtype": "Data",
+   "label": "Annulation non identifie"
+  },
+  {
+   "fieldname": "dateavance_sql",
+   "fieldtype": "Date",
+   "label": "Date avance"
+  },
+  {
+   "fieldname": "flag1",
+   "fieldtype": "Data",
+   "label": "Flag 1"
+  },
+  {
+   "fieldname": "flag2",
+   "fieldtype": "Data",
+   "label": "Flag 2"
+  },
+  {
+   "fieldname": "flag3",
+   "fieldtype": "Data",
+   "label": "Flag 3"
+  },
+  {
+   "fieldname": "flag4",
+   "fieldtype": "Data",
+   "label": "Flag 4"
+  },
+  {
+   "fieldname": "dateecheancefirst_sql",
+   "fieldtype": "Date",
+   "label": "Date eche"
+  },
+  {
+   "fieldname": "dateanalyse_sql",
+   "fieldtype": "Date",
+   "label": "Date analyse"
+  },
+  {
+   "fieldname": "montantrembourse",
+   "fieldtype": "Currency",
+   "label": "Montant rembourse"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-09 17:49:23.339998",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "Pret",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-04-09 14:10:13.049798",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "idavis",
+  "user",
+  "datesaisie_sql",
+  "identifiantpromoteur",
+  "dossiernumero",
+  "produit",
+  "piecenumero",
+  "nature",
+  "dateavis_sql",
+  "column_break_zida",
+  "dateannuationais_sql",
+  "motifannulation",
+  "texteannulation",
+  "montant",
+  "codebancairemb",
+  "codeagencebancairemb",
+  "assainirembnonidentifie",
+  "datecomptabilisationnonident_sql",
+  "origineassainissementnonident"
+ ],
+ "fields": [
+  {
+   "fieldname": "idavis",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "id",
+   "reqd": 1
+  },
+  {
+   "fieldname": "user",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "user",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datesaisie_sql",
+   "fieldtype": "Date",
+   "label": "date saisie"
+  },
+  {
+   "fieldname": "identifiantpromoteur",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "identifiant promoteur",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dossiernumero",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Numero Dossier ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "produit",
+   "fieldtype": "Data",
+   "label": "Produit",
+   "reqd": 1
+  },
+  {
+   "fieldname": "piecenumero",
+   "fieldtype": "Int",
+   "label": "Numero Piece",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nature",
+   "fieldtype": "Select",
+   "label": "Nature",
+   "options": "N1\nN2\nN3",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dateavis_sql",
+   "fieldtype": "Date",
+   "label": "Date Avis"
+  },
+  {
+   "fieldname": "column_break_zida",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dateannuationais_sql",
+   "fieldtype": "Date",
+   "label": "Date Annulation"
+  },
+  {
+   "fieldname": "motifannulation",
+   "fieldtype": "Small Text",
+   "label": "Motif Annulation"
+  },
+  {
+   "fieldname": "texteannulation",
+   "fieldtype": "Text",
+   "label": "Texte Annulation"
+  },
+  {
+   "fieldname": "montant",
+   "fieldtype": "Currency",
+   "label": "Montant",
+   "reqd": 1
+  },
+  {
+   "fieldname": "codebancairemb",
+   "fieldtype": "Data",
+   "label": "Code Bancaire MB",
+   "reqd": 1
+  },
+  {
+   "fieldname": "codeagencebancairemb",
+   "fieldtype": "Data",
+   "label": "Code Agence",
+   "reqd": 1
+  },
+  {
+   "fieldname": "assainirembnonidentifie",
+   "fieldtype": "Data",
+   "label": "ANE"
+  },
+  {
+   "fieldname": "datecomptabilisationnonident_sql",
+   "fieldtype": "Date",
+   "label": "Date Comptabilisation"
+  },
+  {
+   "fieldname": "origineassainissementnonident",
+   "fieldtype": "Data",
+   "label": "Origine Assainissement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-04-09 14:55:10.124696",
+ "modified_by": "Administrator",
+ "module": "Demo App",
+ "name": "avis de credit",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
